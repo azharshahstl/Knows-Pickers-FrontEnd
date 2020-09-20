@@ -67,7 +67,7 @@ class Address {
                     loadItemsForm(address);      
               } else {
                 alert('Unable to find that address for the following reason: ' + status);
-                fetch(`http://localhost:3000/addresses/${addressId}`, {
+                fetch(`https://knows-pickers.herokuapp.com/addresses/${addressId}`, {
                     method: "DELETE", 
                     headers: {
                         'Content-Type': 'application/json',
