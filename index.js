@@ -1,4 +1,4 @@
-BASE_URL = "https://knows-pickers.herokuapp.com/api/v1"
+BASE_URL = "https://knows-pickers-app-api.herokuapp.com/api/v1"
 ADDRESS_URL = `${BASE_URL}/addresses`
 ITEMS_URL = `${BASE_URL}/items`
 USERS_URL = `${BASE_URL}/users`
@@ -56,7 +56,7 @@ window.initialMap = function() {
 const reload = () => {
     if (!localStorage.jwt_token == ''){
         localStorage.removeItem('jwt_token');
-        location.replace("https://knows-pickers.herokuapp.com");
+        location.replace("https://knows-pickers-app-api.herokuapp.com");
         alert ('You are now logged out.')
     } 
 }
