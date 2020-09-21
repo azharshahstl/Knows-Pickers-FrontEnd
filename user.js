@@ -5,8 +5,3 @@ class User {
         this.email = userObject.user.email    
     }
 }
-<<<<<<< HEAD
-// new comment
-=======
-// comment
->>>>>>> master
