@@ -56,7 +56,7 @@ window.initialMap = function() {
 const reload = () => {
     if (!localStorage.jwt_token == ''){
         localStorage.removeItem('jwt_token');
-        location.replace("https://knows-pickers-app-api.herokuapp.com");
+        location.replace('https://sleepy-mcnulty-c4e137.netlify.app/');
         alert ('You are now logged out.')
     } 
 }
@@ -149,7 +149,8 @@ const submitLogin = (e) => {
         method: "POST", 
         headers: {
             'Content-Type': 'application/json',
-            "Accept": "application/json"
+            "Accept": "application/json",
+            "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/'
           },
         body: JSON.stringify({user: {email: e.target.form.elements[0].value, password: e.target.form.elements[1].value}})
     })
@@ -180,7 +181,8 @@ const submitSignup = (e) => {
         method: "POST", 
         headers: {
             'Content-Type': 'application/json',
-            "Accept": "application/json"
+            "Accept": "application/json",
+            "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/'
           },
         body: JSON.stringify({user: {email: e.target.form.elements[0].value, password: e.target.form.elements[1].value}})
     })
@@ -257,6 +259,7 @@ addAddressButton.addEventListener("click", function(e) {
         headers: {
             'Content-Type': 'application/json',
             "Accept": "application/json",
+            "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/',
             Authorization: `Bearer ${localStorage.getItem('jwt_token')}`
           },
         body: JSON.stringify({address: {street_number: e.target.form.elements[0].value, street_name: e.target.form.elements[1].value, zip_code: e.target.form.elements[2].value  }})
@@ -338,6 +341,7 @@ async function getAddressWithItems(e) {
                headers: {
                    'Content-Type': 'application/json',
                    "Accept": "application/json",
+                   "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/',
                    Authorization: `Bearer ${localStorage.getItem('jwt_token')}`
                },
                body: JSON.stringify({address_id: e.target.form.dataset.id, name: array[index].value })  

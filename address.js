@@ -43,6 +43,7 @@ class Address {
                     headers: {
                         'Content-Type': 'application/json',
                         "Accept": "application/json",
+                        "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/'
                       }
                 })
               }
@@ -72,6 +73,7 @@ class Address {
                     headers: {
                         'Content-Type': 'application/json',
                         "Accept": "application/json",
+                        "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/'
                       }
                 })
               }
@@ -168,7 +170,8 @@ class Address {
                 headers: {
                     'Content-Type': 'application/json',
                     "Accept": "application/json",
-                    Authorization: `Bearer ${localStorage.getItem('jwt_token')}`
+                    "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/',
+                    Authorization: `Bearer ${localStorage.getItem('jwt_token')}`,
                 }
             })
             e.target.parentElement.remove();
@@ -188,6 +191,7 @@ class Address {
                         headers: {
                             'Content-Type': 'application/json',
                             "Accept": "application/json",
+                            "Access-Control-Allow-Origin": 'https://sleepy-mcnulty-c4e137.netlify.app/',
                             Authorization: `Bearer ${localStorage.getItem('jwt_token')}`
                         }
             })
