@@ -1,2 +1,2 @@
 [build]
-    command = "home.html"
+    command = "open home.html"
