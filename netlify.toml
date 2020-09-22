@@ -1,2 +1,2 @@
 [build]
-    command="open index.html"
+    command="open home.html"
