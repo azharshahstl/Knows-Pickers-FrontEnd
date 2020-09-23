@@ -1,4 +1,4 @@
-BASE_URL = "https://knows-pickers-app-api.herokuapp.com/api/v1"
+BASE_URL = "https://knows-pickers-api.herokuapp.com/api/v1"
 ADDRESS_URL = `${BASE_URL}/addresses`
 ITEMS_URL = `${BASE_URL}/items`
 USERS_URL = `${BASE_URL}/users`

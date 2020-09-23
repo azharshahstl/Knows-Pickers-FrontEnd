@@ -38,7 +38,7 @@ class Address {
                     sortItemsAlphabetically(Address.allAddresses)
               } else {
                 alert('Unable to find that address for the following reason: ' + status);
-                fetch(`https://knows-pickers-app-api.herokuapp.com/api/v1/addresses/${addressId}`, {
+                fetch(`https://knows-pickers-api.herokuapp.com/api/v1/addresses/${addressId}`, {
                     method: "DELETE", 
                     headers: {
                         'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ class Address {
                     loadItemsForm(address);      
               } else {
                 alert('Unable to find that address for the following reason: ' + status);
-                fetch(`https://knows-pickers-app-api.herokuapp.com/api/v1/addresses/${addressId}`, {
+                fetch(`https://knows-pickers-api.herokuapp.com/api/v1/addresses/${addressId}`, {
                     method: "DELETE", 
                     headers: {
                         'Content-Type': 'application/json',
