@@ -31,11 +31,10 @@ document.addEventListener("DOMContentLoaded",() => {
    editItemsDiv.style.display="none"; 
 
    fetch(ADDRESS_URL, {
-       credentials: 'include',
-       method: 'Get',
+       method: 'GET',
        headers: {
         'Content-Type': 'application/json',
-        "Accept": "application/vnd.heroku+json; version=3"
+        "Accept": "application/json"
         }
    })
     .then(response => response.json())
@@ -156,7 +155,7 @@ const submitLogin = (e) => {
         method: "POST", 
         headers: {
             'Content-Type': 'application/json',
-            "Accept": "application/vnd.heroku+json; version=3"
+            "Accept": "application/json"
           },
         body: JSON.stringify({user: {email: e.target.form.elements[0].value, password: e.target.form.elements[1].value}})
     })
