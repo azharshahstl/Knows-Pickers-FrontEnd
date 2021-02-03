@@ -202,6 +202,8 @@ const submitSignup = (e) => {
         localStorage.setItem('jwt_token', json.jwt )
         document.getElementById("signup-form").reset();
         document.getElementById("signup-form").remove();
+        document.getElementById("login").remove();
+        document.getElementById('signup').remove();
         signup.addEventListener("click", loadSignupForm)
         const newUser = new User(json);
         alert ('You are signed up and logged in.')
