@@ -112,5 +112,5 @@ div#addressButton {
 }
 
 #logout {
-    display: hidden;
+    display: none;
 }
