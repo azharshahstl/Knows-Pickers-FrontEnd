@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",() => {
    script.src = `https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCcbWghcM4sSN_J1rPvlFq4kJplEhsD2yc`; 
    itemsFormDiv.style.display="none"; 
    editItemsDiv.style.display="none"; 
-   if (localStorage.jwt_token !=''){
+   if (localStorage.jwt_token != undefined){
         logout.style.display="inline"
    }
 
