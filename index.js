@@ -63,6 +63,7 @@ window.initialMap = function() {
 };
 
 const reload = () => {
+    console.log(localStorage.jwt_token)
     if (!localStorage.jwt_token == ''){
         localStorage.removeItem('jwt_token');
         location.replace('https://sleepy-mcnulty-c4e137.netlify.app');
