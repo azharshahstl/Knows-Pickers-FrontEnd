@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded",() => {
    script.src = `https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCcbWghcM4sSN_J1rPvlFq4kJplEhsD2yc`; 
    itemsFormDiv.style.display="none"; 
    editItemsDiv.style.display="none"; 
+   if (localStorage.getItem("jwt_token")){
+        logout.display="visible"
+   }
 
    fetch(ADDRESS_URL, {
        method: 'GET',
