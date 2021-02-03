@@ -67,6 +67,7 @@ const reload = () => {
         localStorage.removeItem('jwt_token');
         location.replace('https://sleepy-mcnulty-c4e137.netlify.app');
         alert ('You are now logged out.')
+        logout.remove();
     } 
 }
 
