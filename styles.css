@@ -110,3 +110,7 @@ div#addressButton {
     width: 200px;
     top: 5%;
 }
+
+#logout {
+    display: hidden;
+}
