@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded",() => {
    itemsFormDiv.style.display="none"; 
    editItemsDiv.style.display="none"; 
    if (localStorage.jwt_token != undefined){
-        logout.style.display="inline"
+        logout.style.display="inline";
+        signup.style.display="none";
+        login.style.display="none";
    }
 
    fetch(ADDRESS_URL, {
