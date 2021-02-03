@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",() => {
    itemsFormDiv.style.display="none"; 
    editItemsDiv.style.display="none"; 
    if (localStorage.getItem("jwt_token")){
-        logout.style.display="visible"
+        logout.style.display="inline"
    }
 
    fetch(ADDRESS_URL, {
