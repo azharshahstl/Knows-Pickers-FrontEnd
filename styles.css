@@ -111,6 +111,6 @@ div#addressButton {
     top: 5%;
 }
 
-#logout {
+button.logout {
     display: none;
 }
