@@ -170,6 +170,7 @@ const submitLogin = (e) => {
             document.getElementById("login-form").reset();
             document.getElementById("login-form").remove();
             document.getElementById("login").remove();
+            document.getElementById('signup').remove();
             login.addEventListener("click", loadLoginForm);
             alert ("You are now logged in.")
                 if (document.getElementById("signup-form")){
