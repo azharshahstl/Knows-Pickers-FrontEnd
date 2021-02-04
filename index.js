@@ -178,7 +178,8 @@ const submitLogin = (e) => {
             document.getElementById("login-form").remove();
             document.getElementById("login").remove();
             document.getElementById('signup').remove();
-            document.getElementById('logout').style.display="inline"
+            // document.getElementById('logout').style.display="inline"
+            logout.style.display="inline";
             login.addEventListener("click", loadLoginForm);
             alert ("You are now logged in.")
                 if (document.getElementById("signup-form")){
@@ -212,6 +213,7 @@ const submitSignup = (e) => {
         document.getElementById("signup-form").remove();
         document.getElementById("login").remove();
         document.getElementById('signup').remove();
+        document.getElementById('logout').style.display="inline"
         signup.addEventListener("click", loadSignupForm)
         const newUser = new User(json);
         alert ('You are signed up and logged in.')
