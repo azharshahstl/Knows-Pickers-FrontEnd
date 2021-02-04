@@ -42,7 +42,6 @@ div#addressButton {
     background-color: antiquewhite;
     font: inherit;
     cursor: pointer;
-    margin-bottom: 4px;
 }
 
 #items-form, #edit-items {
@@ -94,6 +93,7 @@ div#addressButton {
     top: 48%;
     right: 20px;
     overflow: scroll;
+    margin-top: 8px;
 }
 
 #signupform { 
