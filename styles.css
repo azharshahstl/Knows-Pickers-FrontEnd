@@ -42,6 +42,7 @@ div#addressButton {
     background-color: antiquewhite;
     font: inherit;
     cursor: pointer;
+    margin-bottom: 4px;
 }
 
 #items-form, #edit-items {
