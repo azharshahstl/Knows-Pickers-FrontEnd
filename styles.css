@@ -18,6 +18,8 @@ html, body {
 div#addressButton {
     float: right;
     width: 28%;
+    cursor: pointer;
+    font: inherit;
 }
 #create-address-form {
     border: 3px solid #73AD21;
