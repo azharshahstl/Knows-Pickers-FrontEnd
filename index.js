@@ -176,13 +176,13 @@ const submitLogin = (e) => {
             localStorage.setItem('jwt_token', json.jwt)
             document.getElementById("login-form").reset();
             document.getElementById("login-form").remove();
-            document.getElementById("login").remove();
-            document.getElementById('signup').remove();
-            // document.getElementById('logout').style.display="inline"
+            login.remove();
+            signup.remove();
             logout.style.display="inline";
-            login.addEventListener("click", loadLoginForm);
+            // login.addEventListener("click", loadLoginForm);
             alert ("You are now logged in.")
                 if (document.getElementById("signup-form")){
+                    document.getElementById("signup-form").reset();
                     document.getElementById("signup-form").remove();
                 }
             }    
@@ -213,7 +213,7 @@ const submitSignup = (e) => {
         document.getElementById("signup-form").remove();
         document.getElementById("login").remove();
         document.getElementById('signup').remove();
-        document.getElementById('logout').style.display="inline"
+        logout.style.display="inline"
         signup.addEventListener("click", loadSignupForm)
         const newUser = new User(json);
         alert ('You are signed up and logged in.')
