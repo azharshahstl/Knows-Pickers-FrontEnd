@@ -114,3 +114,9 @@ div#addressButton {
 button.logout {
     display: none;
 }
+
+#signup, #login, #logout {
+    font: inherit; 
+    border-radius: 4px;
+    cursor: pointer;
+}
