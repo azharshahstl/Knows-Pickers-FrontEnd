@@ -124,3 +124,7 @@ button.logout {
     border-radius: 4px;
     cursor: pointer;
 }
+
+#logout {
+    display: none;
+}
