@@ -118,6 +118,7 @@ div#addressButton {
     float: left;
     width: 200px;
     top: 5%;
+    margin-bottom: 5px;
 }
 
 button.logout {
