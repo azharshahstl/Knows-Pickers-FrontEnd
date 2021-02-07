@@ -113,7 +113,7 @@ div#addressButton {
     top: 3%;
 }
 
-#rules {
+#rules p {
     position: absolute;
     float: left;
     width: 200px;
