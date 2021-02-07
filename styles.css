@@ -24,6 +24,8 @@ div#addressButton {
     float: right;
     width: 28%;
     font: inherit;
+    position: absolute;
+    margin: 5px;
 }
 #create-address-form {
     border: 3px solid #73AD21;
@@ -47,6 +49,9 @@ div#addressButton {
     background-color: antiquewhite;
     font: inherit;
     cursor: pointer;
+    position: fixed;
+    right: 10%;
+    margin-top: 10px;
 }
 
 #items-form, #edit-items {
