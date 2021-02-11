@@ -13,6 +13,7 @@
     width: 70%; 
     border: 3px; 
    }
+
 html, body {
     margin: 0;
     padding: 1px;
@@ -131,9 +132,9 @@ div#addressButton {
     margin-bottom: 5px;
 }
 
-button.logout {
+/* button.logout {
     display: none;
-}
+} */
 
 #signup, #login, #logout {
     font: inherit; 
