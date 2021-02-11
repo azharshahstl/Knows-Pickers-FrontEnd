@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+.header {
+    position: sticky;
+}
+
 #map {
     display: inline-block;
     height: 600px; 
@@ -139,4 +143,8 @@ button.logout {
 
 #logout {
     display: none;
+}
+
+@media (max-width: 1100pxx){
+
 }
