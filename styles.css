@@ -61,7 +61,7 @@ main {
 }
 
 div#addressButton {
-    float: right;
+    /* float: right; */
     width: 28%;
     font: inherit;
     /* position: absolute; */
