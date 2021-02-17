@@ -58,7 +58,7 @@ div#addressButton {
     float: right;
     width: 28%;
     font: inherit;
-    position: absolute;
+    /* position: absolute; */
     margin: 5px;
 }
 #create-address-form {
@@ -72,7 +72,7 @@ div#addressButton {
 }
 
 #map {
-    display: inline-block;
+    /* display: inline-block; */
     height: 600px; 
     width: 70%; 
     border: 3px; 
