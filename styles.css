@@ -22,6 +22,10 @@ body {
    flex-direction: column;
 }
 
+main {
+    margin-top: 10.5rem;
+}
+
 /* .title {
     text-align: center;
     list-style-position: inside;
