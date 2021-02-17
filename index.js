@@ -255,7 +255,7 @@ function sortItemsAlphabetically(array) {
         return a.toLowerCase().localeCompare(b.toLowerCase());
     });
    
-    alphaItemsDiv.style.display="inline-block";
+    alphaItemsDiv.style.visibility="visible";
     const ulitems = document.getElementById("ul-items")
     ulitems.innerHTML = '';
     for (const itemName of alphabatizedItems) {

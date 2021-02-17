@@ -142,7 +142,7 @@ div#addressButton {
     padding: 4px;
     width: 26%;
     height: 200px;
-    position: absolute;
+    /* position: absolute; */
     top: 40%;
     right: 20px;
     overflow: scroll;
