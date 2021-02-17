@@ -88,7 +88,7 @@ div#addressButton {
     /* display: inline-block; */
     height: 600px; 
     width: 700px; 
-    padding-left: 4px; 
+    margin-left: 10px; 
    }
 
 #add-button{
