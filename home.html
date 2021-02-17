@@ -37,30 +37,34 @@
             </li>
         </ol>
      </div>
-      <div id="map"></div>
-      <div id="addressButton"></div>
-      <div id="alpha-items">
-        <p>Items still available...</p>
-        <ul id="ul-items"></ul>
-      </div>
-      <div id="form">
-        <form class="form" id="create-address-form" action="#" method="post">
-          <h4>Fill Out the Form Below:</h4>
-          <label for="street-number">Street Number:</label>
-          <input type="text" id="street-number" name="street_number" placeholder="ex. 1187"></br>
-          <label for="street-name">Street Name:</label>
-          <input type="text" id="street-name" name="street_name" placeholder="Hunterwasser Ave."></br>
-          <label for="zip-code">Zip Code:</label>
-          <input type="text" id="zip-code" name="zip_code" placeholder="63116"></br>
-        </br>
-          <input id="add-button" type="submit" value="Add Address">
-          <input id="cancel-button" type="submit" value="Cancel">
-        </form>
-      </div>
-      <div id="items-form">
-      </div>
-      <div id="edit-items">
-      </div>
+     <section class="left-and-right-sections"> 
+      <div id="map" class="left-section"></div>
+      <section class="rights-section">  
+       <div id="addressButton"></div>
+       <div id="alpha-items">
+         <p>Items still available...</p>
+         <ul id="ul-items"></ul>
+       </div>
+       <div id="form">
+         <form class="form" id="create-address-form" action="#" method="post">
+           <h4>Fill Out the Form Below:</h4>
+           <label for="street-number">Street Number:</label>
+           <input type="text" id="street-number" name="street_number" placeholder="ex. 1187"></br>
+           <label for="street-name">Street Name:</label>
+           <input type="text" id="street-name" name="street_name" placeholder="Hunterwasser Ave."></br>
+           <label for="zip-code">Zip Code:</label>
+           <input type="text" id="zip-code" name="zip_code" placeholder="63116"></br>
+         </br>
+           <input id="add-button" type="submit" value="Add Address">
+           <input id="cancel-button" type="submit" value="Cancel">
+         </form>
+       </div>
+       <div id="items-form">
+       </div>
+       <div id="edit-items">
+       </div>
+      </section> </section>
+     
     </main>
     <script type=text/javascript src="index.js"></script>
     <script type=text/javascript src="address.js"></script>
