@@ -102,6 +102,7 @@ const getSignupForm = () => {
         form.appendChild(password);
         form.appendChild(signupButton);
         signupFormDiv.appendChild(form);
+        document.getElementById("signup-form").reset();
 }
 
 const loadSignupForm = () => {
