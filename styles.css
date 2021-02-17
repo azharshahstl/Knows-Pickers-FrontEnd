@@ -142,7 +142,7 @@ div#addressButton {
 
 #alpha-items{
     border: 3px solid #73AD21;
-    display: none;
+    visibility: hidden;
     padding: 4px;
     width: 26%;
     height: 200px;
