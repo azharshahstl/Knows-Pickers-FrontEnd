@@ -88,7 +88,7 @@ div#addressButton {
     background-color: antiquewhite;
     font: inherit;
     cursor: pointer;
-    position: fixed;
+    /* position: fixed; */
     right: 10%;
     margin-top: 10px;
 }
