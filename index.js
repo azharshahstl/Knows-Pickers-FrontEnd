@@ -87,7 +87,6 @@ const getSignupForm = () => {
         email.setAttribute('type',"email");
         email.setAttribute('name',"email");
         email.setAttribute('placeholder', "Email");
-        email.reset();
         
         const password = document.createElement("input");
         password.setAttribute('type', 'password')
