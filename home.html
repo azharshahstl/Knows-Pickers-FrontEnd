@@ -8,44 +8,41 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="header">
-      <div id="title">
-        <h1>Knows Pickers</h1>
-        <h2>(for those who know)</h2>
-        <div id="rules">
-          <p>Please place all items for giveaway in the <strong>alley</strong> behind your house.  Be kind to your neighbors and please be careful in choosing which items to place outside.</p>
+    <header class="main-header">
+        <h1 class="title">Knows Pickers</h1>
+        <h2 class="subtitle">(for those who know)</h2>
+        <div class="rules-container">
+          <p class="rule-1">Please place all items for giveaway in the <strong>alley</strong> behind your house.</p>
+          <p class="rule-2">Be kind to your neighbors and please be careful in choosing which items to place outside.</p>
         </div>
-        <div>
+        <nav>
           <button id="signup">Sign Up</button>
           <button id="login">Log In</button>
           <button id="logout">Log Out</button>
           <div id="signupform"></div>
           <div id="loginform"></div>
-        </div>
-        <p>
-          <ol>
-            <li>
+        </nav>
+    </header>
+    <main>
+      <div class="instructions">
+        <ol class='instruction-items'>
+            <li class="inst">
               You must be LOGGED IN to create an address and list items to give away.
             </li>
-            <li>
+            <li class="inst">
               You can hover over a marker to see the items available at that address.
             </li>
-            <li>
+            <li class="inst">
               You can click on a marker to see and choose items to be deleted. But you must be LOGGED IN to delete them.
             </li>
-         </ol>
-        </p>
-    </header>
-     
-    </div>
-    <main>
+        </ol>
+     </div>
       <div id="map"></div>
       <div id="addressButton"></div>
       <div id="alpha-items">
         <p>Items still available...</p>
         <ul id="ul-items"></ul>
       </div>
-     
       <div id="form">
         <form class="form" id="create-address-form" action="#" method="post">
           <h4>Fill Out the Form Below:</h4>
@@ -70,8 +67,6 @@
     <script type=text/javascript src="item.js"></script>
     <script type=text/javascript src="user.js"></script>
     
-    <footer>
-      <p>property of aZhar Shah</p>
-    </footer>
+    <footer>&copy; Copyright 2021</footer>   
   </body>
 </html>
