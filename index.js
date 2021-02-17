@@ -148,6 +148,7 @@ const loadLoginForm = () => {
     if (!document.querySelector("#signup-form") && !document.querySelector("#login-form")) {
         getLoginForm();
     } else if (document.querySelector("#signup-form")){
+        document.getElementById("signup-form").reset();
         document.getElementById("signup-form").remove();
         getLoginForm();
     } else {
