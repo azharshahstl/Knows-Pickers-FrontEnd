@@ -237,7 +237,7 @@ const loadAddressDiv = () => {
     
     button.addEventListener("click", function () {
         if (!localStorage.jwt_token == ""){
-            createAddressForm.style.display="inline-block";
+            createAddressForm.style.visibility="visible";
             addressDiv.style.display="none";
             alphaItemsDiv.style.display="none";}
         else {

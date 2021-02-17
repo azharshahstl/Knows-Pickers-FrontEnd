@@ -68,7 +68,7 @@ div#addressButton {
     display: none;
     padding: 4px;
     width: 26%;
-    position: absolute;
+    /* position: absolute; */
     top: 33%;
     right: 20px;
 }
