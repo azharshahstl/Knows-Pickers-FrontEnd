@@ -81,7 +81,7 @@ div#addressButton {
     width: 100px;
     /* position: absolute; */
     /* top: 33%; */
-    /* right: 20px; */
+    right: 20px;
 }
 
 #map {
