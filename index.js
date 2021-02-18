@@ -100,8 +100,8 @@ const getSignupForm = () => {
         form.appendChild(email);
         form.appendChild(password);
         form.appendChild(signupButton);
-        form.reset();
         signupFormDiv.appendChild(form);
+        form.reset();
 }
 
 const loadSignupForm = () => {
