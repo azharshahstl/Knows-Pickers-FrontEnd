@@ -270,7 +270,7 @@ function sortItemsAlphabetically(array) {
 cancelButton.addEventListener("click", function (e) {
     e.preventDefault(); 
     createAddressForm.style.display="none";
-    addressDiv.style.dispaly="block";
+    addressDiv.style.display="block";
 })
 
 addAddressButton.addEventListener("click", function(e) {
