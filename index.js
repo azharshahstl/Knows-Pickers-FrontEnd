@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded",() => {
    itemsFormDiv.style.display="none"; 
    editItemsDiv.style.display="none"; 
    if (localStorage.jwt_token){
-       console.log(localStorage.jwt_token)
         logout.style.display="inline";
         signup.style.display="none";
         login.style.display="none";
@@ -293,7 +292,7 @@ addAddressButton.addEventListener("click", function(e) {
 
 const loadItemsForm = (address) => {
     createAddressForm.style.display="none"; 
-    itemsFormDiv.style.display="inline-block"; 
+    itemsFormDiv.style.display="block"; 
     
     const form = document.createElement("form");
     const info = document.createElement("h3");
