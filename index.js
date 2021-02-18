@@ -292,7 +292,7 @@ addAddressButton.addEventListener("click", function(e) {
 
 const loadItemsForm = (address) => {
     createAddressForm.style.display="none"; 
-    itemsFormDiv.style.display="block"; 
+    itemsFormDiv.style.display="flex"; 
     
     const form = document.createElement("form");
     const info = document.createElement("h3");
