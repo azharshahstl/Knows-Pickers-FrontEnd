@@ -101,11 +101,11 @@ const getSignupForm = () => {
         form.appendChild(password);
         form.appendChild(signupButton);
         signupFormDiv.appendChild(form);
-        form.reset();
+        // form.reset();
 }
 
 const loadSignupForm = () => {
-    if (!document.querySelector("#signup-form") || !document.querySelector("#login-form")) {
+    if (!document.querySelector("#signup-form") && !document.querySelector("#login-form")) {
         getSignupForm();
     } else if (document.querySelector("#login-form")) {
         document.getElementById("login-form").reset().remove();
