@@ -119,28 +119,28 @@ div#addressButton {
 }
 
 #add-items-button, #update-items {
-    position: absolute;
-    float: right;
+    /* position: absolute; */
+    /* float: right; */
     width: 28%; 
-    bottom: 0%;
-    right:0%
+    /* bottom: 0%;
+    right:0% */
 
 }
 
 #add-another-button, #delete-marker-and-items {
-    position: absolute;
-    float: right;
+    /* position: absolute; */
+    /* float: right;
     width: 28%; 
     bottom: 0%;
-    left: 0%
+    left: 0% */
 }
 
 #cancel-items-button, #close-items-window{
-    position: absolute;
+    /* position: absolute;
     float: right;
     width: 28%; 
     bottom: 0%;
-    left: 35%;
+    left: 35%; */
 }
 
 #delete-item {
