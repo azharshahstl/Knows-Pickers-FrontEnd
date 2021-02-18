@@ -108,6 +108,10 @@ div#addressButton {
     margin-top: 10px;
 }
 
+#address-items-form {
+    display: flex;
+}
+
 #items-form, #edit-items {
     border: 3px solid #73AD21;
     padding: 4px;
