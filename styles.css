@@ -111,11 +111,11 @@ div#addressButton {
 #items-form, #edit-items {
     border: 3px solid #73AD21;
     padding: 4px;
-    width: 26%;
+    width: 200px;
     /* position: absolute; */
-    top: 33%;
-    right: 20px;
-    height: 50%
+    /* top: 33%; */
+    /* right: 20px; */
+    /* height: 50% */
 }
 
 #add-items-button, #update-items {
