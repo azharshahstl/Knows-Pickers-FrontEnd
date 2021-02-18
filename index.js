@@ -255,7 +255,7 @@ function sortItemsAlphabetically(array) {
         return a.toLowerCase().localeCompare(b.toLowerCase());
     });
    
-    alphaItemsDiv.style.visibility="visible";
+    alphaItemsDiv.style.display="block";
     const ulitems = document.getElementById("ul-items")
     ulitems.innerHTML = '';
     for (const itemName of alphabatizedItems) {
@@ -270,7 +270,7 @@ function sortItemsAlphabetically(array) {
 cancelButton.addEventListener("click", function (e) {
     e.preventDefault(); 
     createAddressForm.style.display="none";
-    addressDiv.style.visibility="visible";
+    addressDiv.style.dispaly="block";
 })
 
 addAddressButton.addEventListener("click", function(e) {
