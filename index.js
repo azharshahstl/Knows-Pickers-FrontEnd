@@ -238,8 +238,8 @@ const loadAddressDiv = () => {
     button.addEventListener("click", function () {
         if (!localStorage.jwt_token == ""){
             createAddressForm.style.visibility="visible";
-            addressDiv.style.display="none";
-            alphaItemsDiv.style.display="none";}
+            addressDiv.style.visibility="hidden";
+            alphaItemsDiv.style.visibility="hidden";}
         else {
             alert ('You must be looged in to create an address.')
         }
