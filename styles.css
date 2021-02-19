@@ -108,7 +108,7 @@ div#addressButton {
     margin-top: 10px;
 }
 
-#address-items-form {
+#address-items-form, #edit-items-form {
     display: flex;
     flex-direction: column;
     border: 3px solid #73AD21;
