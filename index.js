@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded",() => {
     })
 
    loadAddressDiv();
+   alert("If you are a recruiter or potential employer, I am updating this site live, so it is not quite functioning properly.  Please keep that in mind.  Thank you.")
 })
 
 window.initialMap = function() {
