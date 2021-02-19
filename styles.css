@@ -117,9 +117,9 @@ div#addressButton {
 }
 
 #items-form, #edit-items {
-    border: 3px solid #73AD21;
+    /* border: 3px solid #73AD21;
     padding: 4px;
-    width: 200px;
+    width: 200px; */
     /* position: absolute; */
     /* top: 33%; */
     /* right: 20px; */
@@ -129,7 +129,7 @@ div#addressButton {
 #add-items-button, #update-items {
     /* position: absolute; */
     /* float: right; */
-    width: 28%; 
+    width: 100%; 
     /* bottom: 0%;
     right:0% */
 
