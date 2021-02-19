@@ -123,13 +123,13 @@ const getLoginForm = () => {
         form.setAttribute("id", "login-form");
         form.setAttribute('method',"POST");
         form.setAttribute('action',"#");
-        form.setAttribute('autocomplete',"off");
+        // form.setAttribute('autocomplete',"off");
         
         const email = document.createElement("input"); 
         email.setAttribute('type',"email");
         email.setAttribute('name',"email");
         email.setAttribute('placeholder', "Email");
-        email.setAttribute('autocomplete', "off");
+        email.setAttribute('autocomplete', "new-password");
         
         const password = document.createElement("input");
         password.setAttribute('type', 'password');
