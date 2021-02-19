@@ -119,7 +119,7 @@ signup.addEventListener("click", loadSignupForm)
 
 const getLoginForm = () => {
     loginFormDiv.style.display="inline-block";
-        const form = document.createElement("form")
+        const form = document.createElement("form");
         form.setAttribute("id", "login-form");
         form.setAttribute('method',"POST");
         form.setAttribute('action',"#");
@@ -127,17 +127,18 @@ const getLoginForm = () => {
         const email = document.createElement("input"); 
         email.setAttribute('type',"email");
         email.setAttribute('name',"email");
-        email.setAttribute('placeholder', "Email")
+        email.setAttribute('placeholder', "Email");
+        email.setAttribute('autocomplete',"off");
         
         const password = document.createElement("input");
-        password.setAttribute('type', 'password')
-        password.setAttribute('name','password')
-        password.setAttribute('placeholder', 'password')
+        password.setAttribute('type', 'password');
+        password.setAttribute('name','password');
+        password.setAttribute('placeholder', 'password');
 
         const loginButton = document.createElement("button"); 
         loginButton.setAttribute("id","login-button");
-        loginButton.innerHTML = "Log In"
-        loginButton.addEventListener("click", submitLogin)
+        loginButton.innerHTML = "Log In";
+        loginButton.addEventListener("click", submitLogin);
         
         form.appendChild(email);
         form.appendChild(password);
