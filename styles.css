@@ -110,6 +110,10 @@ div#addressButton {
 
 #address-items-form {
     display: flex;
+    flex-direction: column;
+    border: 3px solid #73AD21;
+    padding: 4px;
+    width: 200px;
 }
 
 #items-form, #edit-items {
