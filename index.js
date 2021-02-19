@@ -88,9 +88,10 @@ const getSignupForm = () => {
         email.setAttribute('placeholder', "Email");
         
         const password = document.createElement("input");
-        password.setAttribute('type', 'password')
-        password.setAttribute('name','password')
-        password.setAttribute('placeholder', 'password')
+        password.setAttribute('type', 'password');
+        password.setAttribute('name','password');
+        password.setAttribute('placeholder', 'password');
+        password.setAttribute('autocomplete', "new-password");
 
         const signupButton = document.createElement("button"); 
         signupButton.setAttribute("id","signup-button");
@@ -129,7 +130,6 @@ const getLoginForm = () => {
         email.setAttribute('type',"email");
         email.setAttribute('name',"email");
         email.setAttribute('placeholder', "Email");
-        email.setAttribute('autocomplete', "new-password");
         
         const password = document.createElement("input");
         password.setAttribute('type', 'password');
