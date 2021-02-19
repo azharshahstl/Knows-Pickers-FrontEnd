@@ -129,7 +129,7 @@ const getLoginForm = () => {
         email.setAttribute('type',"email");
         email.setAttribute('name',"email");
         email.setAttribute('placeholder', "Email");
-        email.setAttribute('autocomplete',"off");
+        email.setAttribute('autocomplete', "off");
         
         const password = document.createElement("input");
         password.setAttribute('type', 'password');
