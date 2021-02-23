@@ -129,6 +129,7 @@ class Address {
                 li.appendChild(editItemsButton);
 
                 ul.appendChild(li);
+                editItemsDiv.appendChild(ul)
                 
             }
 
