@@ -88,14 +88,15 @@ class Address {
     }
 
     editItemsOnAddress() {
-        if (editItemsForm) {
-            editItemsForm.style.display="none"; 
+        if (editItemsDiv) {
+            editItemsDiv.style.display="none"; 
         } 
         else {
         
             addressDiv.style.display="none"; 
             alphaItemsDiv.style.display="none";
-            const editItemsDiv = document.getElementById("edit-items");
+            const editItemsDiv = document.createElement("div");
+            editItemsDiv.setAttribute("id", "edit-items")
             editItemsDiv.style.display="inline-block"
         
             const editItemsForm = document.createElement("form");
