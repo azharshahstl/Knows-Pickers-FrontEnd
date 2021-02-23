@@ -4,7 +4,6 @@ ITEMS_URL = `${BASE_URL}/items`
 USERS_URL = `${BASE_URL}/users`
 AUTH_URL = `${BASE_URL}/login`
 
-var editItemsDiv;
 const mainBody = document.querySelector("main");
 const addressDiv = document.getElementById("addressButton");
 const script = document.createElement('script');
