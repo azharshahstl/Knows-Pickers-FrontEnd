@@ -88,10 +88,7 @@ class Address {
     }
 
     editItemsOnAddress() {
-        if (editItemsDiv) {
-            editItemsDiv.style.display="none"; 
-        } 
-        else {
+       
             addressDiv.style.display="none"; 
             alphaItemsDiv.style.display="none";
             const editItemsDiv = document.createElement("div");
@@ -129,7 +126,7 @@ class Address {
                 ul.appendChild(li);
                 editItemsDiv.appendChild(ul)
                 
-            }
+            
 
             const deletMarkerAndItems = document.createElement("button");
             deletMarkerAndItems.setAttribute("data-deleteMarker", this.id)
