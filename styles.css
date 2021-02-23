@@ -116,15 +116,15 @@ div#addressButton {
     width: 200px;
 }
 
-#items-form, #edit-items {
-    /* border: 3px solid #73AD21;
+/* #items-form, #edit-items {
+    border: 3px solid #73AD21;
     padding: 4px;
-    width: 200px; */
-    /* position: absolute; */
-    /* top: 33%; */
-    /* right: 20px; */
-    /* height: 50% */
-}
+    width: 200px; 
+    position: absolute;
+    top: 33%;
+    right: 20px;
+    height: 50%
+} */
 
 #add-items-button, #update-items {
     /* position: absolute; */
@@ -135,21 +135,21 @@ div#addressButton {
 
 }
 
-#add-another-button, #delete-marker-and-items {
-    /* position: absolute; */
-    /* float: right;
+/* #add-another-button, #delete-marker-and-items {
+    position: absolute; 
+    float: right; 
     width: 28%; 
     bottom: 0%;
-    left: 0% */
-}
+    left: 0%
+} */
 
-#cancel-items-button, #close-items-window{
-    /* position: absolute;
+/* #cancel-items-button, #close-items-window{
+    position: absolute;
     float: right;
     width: 28%; 
     bottom: 0%;
-    left: 35%; */
-}
+    left: 35%;
+} */
 
 #delete-item {
     right: 0%;
