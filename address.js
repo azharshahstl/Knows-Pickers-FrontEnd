@@ -91,6 +91,8 @@ class Address {
         console.log("inside editItemsOnAddress")
         addressDiv.style.display="none"; 
         alphaItemsDiv.style.display="none";
+        itemsFormDiv.style.display="block"; 
+        editItemsDiv.style.display="block"; 
         const editItemsDiv = document.createElement("div");
         editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
