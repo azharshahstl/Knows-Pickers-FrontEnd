@@ -94,7 +94,7 @@ class Address {
         else {
             addressDiv.style.display="none"; 
             alphaItemsDiv.style.display="none";
-            const editItemsDiv = document.createElement("div");
+            editItemsDiv = document.createElement("div");
             editItemsDiv.setAttribute("id", "edit-items")
             editItemsDiv.style.display="inline-block"
         
