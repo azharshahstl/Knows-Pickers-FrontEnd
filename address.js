@@ -88,70 +88,75 @@ class Address {
     }
 
     editItemsOnAddress() {
-        addressDiv.style.display="none"; 
-        alphaItemsDiv.style.display="none";
-        const editItemsDiv = document.getElementById("edit-items");
-        editItemsDiv.style.display="inline-block"
-       
-        const editItemsForm = document.createElement("form");
-        editItemsForm.setAttribute("data-set", this.id);
-        editItemsForm.setAttribute("id", "edit-items-form")
-
-        const h4 = document.createElement("h4");
-        h4.innerHTML = `Editing items for the following address:
-        ${this.streetNumber} ${this.streetName}`
-
-        const ul = document.createElement("ul");
-        
-        for(const item of this.items){
-
-            const li = document.createElement("li")
-            const editItemInput = document.createElement("input");
-            editItemInput.setAttribute("type", "text");
-            editItemInput.setAttribute("name", "name");
-            editItemInput.setAttribute("value", item.name);
-
-            const editItemsButton = document.createElement("button");
-            editItemsButton.setAttribute("data-item", item.id);
-            editItemsButton.setAttribute("data-address", this.id)
-            editItemsButton.setAttribute("id", "delete-item")
-            editItemsButton.innerHTML = "Delete Item"
-            editItemsButton.addEventListener("click", this.deleteItem)
-
-            li.appendChild(editItemInput);
-            li.appendChild(editItemsButton);
-
-            ul.appendChild(li);
-            
+        if (editItemsDiv){
+            editItemsDiv.style.display="none"
         }
+        else {
+            addressDiv.style.display="none"; 
+            alphaItemsDiv.style.display="none";
+            const editItemsDiv = document.getElementById("edit-items");
+            editItemsDiv.style.display="inline-block"
+        
+            const editItemsForm = document.createElement("form");
+            editItemsForm.setAttribute("data-set", this.id);
+            editItemsForm.setAttribute("id", "edit-items-form")
 
-        const deletMarkerAndItems = document.createElement("button");
-        deletMarkerAndItems.setAttribute("data-deleteMarker", this.id)
-        deletMarkerAndItems.setAttribute("id", "delete-marker-and-items");
-        deletMarkerAndItems.innerHTML = "Delete Marker and Items"
-        deletMarkerAndItems.addEventListener("click", this.deleteMarkerandItems)
+            const h4 = document.createElement("h4");
+            h4.innerHTML = `Editing items for the following address:
+            ${this.streetNumber} ${this.streetName}`
 
-        const closeEditFormWindow = document.createElement("button");
-        closeEditFormWindow.setAttribute("data-closewindow", this.id)
-        closeEditFormWindow.setAttribute("id", "close-items-window");
-        closeEditFormWindow.innerHTML = "Close this Window"
-        closeEditFormWindow.addEventListener("click", this.closeFormWindow)
+            const ul = document.createElement("ul");
+            
+            for(const item of this.items){
 
-       
-    
-        const updateItems = document.createElement("button");
-        updateItems.setAttribute("data-address", this.id)
-        updateItems.setAttribute("id", "update-items");
-        updateItems.setAttribute("value", "submit")
-        updateItems.innerHTML = "Update Items"
-        updateItems.addEventListener("click", this.updateItemsOnAddress)
+                const li = document.createElement("li")
+                const editItemInput = document.createElement("input");
+                editItemInput.setAttribute("type", "text");
+                editItemInput.setAttribute("name", "name");
+                editItemInput.setAttribute("value", item.name);
 
-        editItemsForm.appendChild(h4)
-        editItemsForm.appendChild(ul);
-        editItemsForm.appendChild(updateItems);
-        editItemsForm.appendChild(closeEditFormWindow)
-        editItemsForm.appendChild(deletMarkerAndItems);
-        editItemsDiv.appendChild(editItemsForm);
+                const editItemsButton = document.createElement("button");
+                editItemsButton.setAttribute("data-item", item.id);
+                editItemsButton.setAttribute("data-address", this.id)
+                editItemsButton.setAttribute("id", "delete-item")
+                editItemsButton.innerHTML = "Delete Item"
+                editItemsButton.addEventListener("click", this.deleteItem)
+
+                li.appendChild(editItemInput);
+                li.appendChild(editItemsButton);
+
+                ul.appendChild(li);
+                
+            }
+
+            const deletMarkerAndItems = document.createElement("button");
+            deletMarkerAndItems.setAttribute("data-deleteMarker", this.id)
+            deletMarkerAndItems.setAttribute("id", "delete-marker-and-items");
+            deletMarkerAndItems.innerHTML = "Delete Marker and Items"
+            deletMarkerAndItems.addEventListener("click", this.deleteMarkerandItems)
+
+            const closeEditFormWindow = document.createElement("button");
+            closeEditFormWindow.setAttribute("data-closewindow", this.id)
+            closeEditFormWindow.setAttribute("id", "close-items-window");
+            closeEditFormWindow.innerHTML = "Close this Window"
+            closeEditFormWindow.addEventListener("click", this.closeFormWindow)
+
+        
+        
+            const updateItems = document.createElement("button");
+            updateItems.setAttribute("data-address", this.id)
+            updateItems.setAttribute("id", "update-items");
+            updateItems.setAttribute("value", "submit")
+            updateItems.innerHTML = "Update Items"
+            updateItems.addEventListener("click", this.updateItemsOnAddress)
+
+            editItemsForm.appendChild(h4)
+            editItemsForm.appendChild(ul);
+            editItemsForm.appendChild(updateItems);
+            editItemsForm.appendChild(closeEditFormWindow)
+            editItemsForm.appendChild(deletMarkerAndItems);
+            editItemsDiv.appendChild(editItemsForm);
+        }
     } 
 
     closeFormWindow() {
