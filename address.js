@@ -88,10 +88,7 @@ class Address {
     }
 
     editItemsOnAddress() {
-        if (editItemsForm){
-            editItemsDiv.style.display="none"
-        }
-        else {
+        
             addressDiv.style.display="none"; 
             alphaItemsDiv.style.display="none";
             const editItemsDiv = document.getElementById("edit-items");
@@ -156,7 +153,7 @@ class Address {
             editItemsForm.appendChild(closeEditFormWindow)
             editItemsForm.appendChild(deletMarkerAndItems);
             editItemsDiv.appendChild(editItemsForm);
-        }
+        
     } 
 
     closeFormWindow() {
