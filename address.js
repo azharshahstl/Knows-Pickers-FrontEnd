@@ -88,7 +88,7 @@ class Address {
     }
 
     editItemsOnAddress() {
-        if (editItemsDiv){
+        if (editItemsForm){
             editItemsDiv.style.display="none"
         }
         else {
