@@ -88,12 +88,10 @@ class Address {
     }
 
     editItemsOnAddress() {
-        if (editItemsDiv) {
+        if (editItemsDiv != undefined) {
             editItemsDiv.style.display="none"; 
-            console.log(editItemsDiv)
         } 
         else {
-        
             addressDiv.style.display="none"; 
             alphaItemsDiv.style.display="none";
             const editItemsDiv = document.createElement("div");
