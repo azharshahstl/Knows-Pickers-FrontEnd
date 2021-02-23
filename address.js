@@ -90,6 +90,7 @@ class Address {
     editItemsOnAddress() {
         if (editItemsDiv) {
             editItemsDiv.style.display="none"; 
+            console.log(editItemsDiv)
         } 
         else {
         
