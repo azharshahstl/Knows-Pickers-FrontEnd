@@ -29,7 +29,7 @@ class Address {
                     address.marker = marker;
                     Address.allAddresses.push(address)
                     attachContentToMarker(marker, address.renderMarkerContent());
-                    itemsFormDiv.style.display="none";
+                    // itemsFormDiv.style.display="none";
                     addressDiv.style.display="inline-block";
                     if (document.getElementById("address-items-form")){
                         document.getElementById("address-items-form").remove();
