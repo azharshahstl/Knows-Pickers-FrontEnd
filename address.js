@@ -95,11 +95,13 @@ class Address {
         // const editItemsDiv = document.createElement("div"); 
         // editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
-        // if (document.
+        if (document.querySelector(".not-displayed").className = "not-displayed"){
     
         const editItemsForm = document.createElement("form");
         editItemsForm.setAttribute("data-set", this.id);
         editItemsForm.setAttribute("id", "edit-items-form")
+        document.querySelector(".not-displayed").className = "displayed"
+        
 
         const h4 = document.createElement("h4");
         h4.innerHTML = `Editing items for the following address:
@@ -155,7 +157,7 @@ class Address {
             editItemsForm.appendChild(closeEditFormWindow)
             editItemsForm.appendChild(deletMarkerAndItems);
             editItemsDiv.appendChild(editItemsForm);
-        
+        }
     } 
 
     closeFormWindow() {
