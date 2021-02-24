@@ -93,7 +93,7 @@ class Address {
         alphaItemsDiv.style.display="none";
         itemsFormDiv.style.display="block"; 
         // const editItemsDiv = document.createElement("div"); 
-        editItemsDiv.setAttribute("id", "edit-items")
+        // editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
     
         const editItemsForm = document.createElement("form");
