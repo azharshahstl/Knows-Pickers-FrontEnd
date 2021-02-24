@@ -96,7 +96,7 @@ class Address {
         // editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
     
-        const editItemsForm = document.createElement("form");
+        // const editItemsForm = document.createElement("form");
         editItemsForm.setAttribute("data-set", this.id);
         editItemsForm.setAttribute("id", "edit-items-form")
 

@@ -12,6 +12,7 @@ const addAddressButton = document.getElementById("add-button");
 const createAddressForm = document.getElementById("create-address-form");
 const itemsFormDiv = document.getElementById("items-form");
 const editItemsDiv = document.getElementById("edit-items");
+const editItemsForm = document.querySelector("data-set")
 const alphaItemsDiv = document.getElementById("alpha-items");
 const signup = document.getElementById("signup");
 const login = document.getElementById('login');
