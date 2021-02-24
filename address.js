@@ -89,15 +89,15 @@ class Address {
 
     editItemsOnAddress() {
         console.log("inside editItemsOnAddress")
-        console.log(document.querySelector("data-set"))
         addressDiv.style.display="none"; 
         alphaItemsDiv.style.display="none";
         itemsFormDiv.style.display="block"; 
         // const editItemsDiv = document.createElement("div"); 
         // editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
+        // if (document.
     
-        // const editItemsForm = document.createElement("form");
+        const editItemsForm = document.createElement("form");
         editItemsForm.setAttribute("data-set", this.id);
         editItemsForm.setAttribute("id", "edit-items-form")
 
