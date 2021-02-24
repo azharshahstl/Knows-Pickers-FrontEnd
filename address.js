@@ -229,6 +229,7 @@ class Address {
                 editItemsDiv.style.display ="none";
                 addressDiv.style.display="inline-block";
                 const updatedContent = updatedItemsOnAddress.renderMarkerContent();
+                document.querySelector("#edit-items").className = "not-displayed"
                 attachUpdatedContentToMarker(updatedItemsOnAddress.marker, updatedContent)
             })
     }
