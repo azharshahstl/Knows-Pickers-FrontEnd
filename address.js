@@ -95,12 +95,12 @@ class Address {
         // const editItemsDiv = document.createElement("div"); 
         // editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
-        if (document.querySelector(".not-displayed").className = "not-displayed"){
+        if (document.querySelector("#edit-items").className = "not-displayed"){
     
         const editItemsForm = document.createElement("form");
         editItemsForm.setAttribute("data-set", this.id);
         editItemsForm.setAttribute("id", "edit-items-form")
-        document.querySelector(".not-displayed").className = "displayed"
+        document.querySelector("#edit-items").className = "displayed"
         
 
         const h4 = document.createElement("h4");
@@ -164,7 +164,7 @@ class Address {
         document.getElementById("edit-items-form").remove();
         editItemsDiv.style.display ="none";
         addressDiv.style.display="inline-block";
-        document.querySelector(".not-displayed").className = "not-displayed"
+        document.querySelector("#edit-items").className = "not-displayed"
     }
     
     deleteItem(e) {
