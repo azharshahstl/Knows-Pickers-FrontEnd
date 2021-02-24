@@ -199,6 +199,10 @@ div#addressButton {
     display: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 @media (max-width: 1100px){
     .header {display: block;
     }
