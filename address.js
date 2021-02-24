@@ -89,6 +89,7 @@ class Address {
 
     editItemsOnAddress() {
         console.log("inside editItemsOnAddress")
+        console.log(document.querySelector("data-set"))
         addressDiv.style.display="none"; 
         alphaItemsDiv.style.display="none";
         itemsFormDiv.style.display="block"; 
