@@ -95,69 +95,72 @@ class Address {
         // const editItemsDiv = document.createElement("div"); 
         // editItemsDiv.setAttribute("id", "edit-items")
         editItemsDiv.style.display="inline-block"
-        if (document.querySelector("#edit-items").className == "not-displayed"){
-    
-        const editItemsForm = document.createElement("form");
-        editItemsForm.setAttribute("data-set", this.id);
-        editItemsForm.setAttribute("id", "edit-items-form")
-        document.querySelector("#edit-items").className = "displayed"
+            if (document.querySelector("#edit-items").className == "not-displayed"){
         
+            const editItemsForm = document.createElement("form");
+            editItemsForm.setAttribute("data-set", this.id);
+            editItemsForm.setAttribute("id", "edit-items-form")
+            document.querySelector("#edit-items").className = "displayed"
+            
 
-        const h4 = document.createElement("h4");
-        h4.innerHTML = `Editing items for the following address:
-        ${this.streetNumber} ${this.streetName}`
+            const h4 = document.createElement("h4");
+            h4.innerHTML = `Editing items for the following address:
+            ${this.streetNumber} ${this.streetName}`
 
-        const ul = document.createElement("ul");
-        
-        for(const item of this.items){
+            const ul = document.createElement("ul");
+            
+                for(const item of this.items){
 
-            const li = document.createElement("li")
-            const editItemInput = document.createElement("input");
-            editItemInput.setAttribute("type", "text");
-            editItemInput.setAttribute("name", "name");
-            editItemInput.setAttribute("value", item.name);
+                    const li = document.createElement("li")
+                    const editItemInput = document.createElement("input");
+                    editItemInput.setAttribute("type", "text");
+                    editItemInput.setAttribute("name", "name");
+                    editItemInput.setAttribute("value", item.name);
 
-            const editItemsButton = document.createElement("button");
-            editItemsButton.setAttribute("data-item", item.id);
-            editItemsButton.setAttribute("data-address", this.id)
-            editItemsButton.setAttribute("id", "delete-item")
-            editItemsButton.innerHTML = "Delete Item"
-            editItemsButton.addEventListener("click", this.deleteItem)
+                    const editItemsButton = document.createElement("button");
+                    editItemsButton.setAttribute("data-item", item.id);
+                    editItemsButton.setAttribute("data-address", this.id)
+                    editItemsButton.setAttribute("id", "delete-item")
+                    editItemsButton.innerHTML = "Delete Item"
+                    editItemsButton.addEventListener("click", this.deleteItem)
 
-            li.appendChild(editItemInput);
-            li.appendChild(editItemsButton);
+                    li.appendChild(editItemInput);
+                    li.appendChild(editItemsButton);
 
-            ul.appendChild(li);
-        }
-                
-            const deletMarkerAndItems = document.createElement("button");
-            deletMarkerAndItems.setAttribute("data-deleteMarker", this.id)
-            deletMarkerAndItems.setAttribute("id", "delete-marker-and-items");
-            deletMarkerAndItems.innerHTML = "Delete Marker and Items"
-            deletMarkerAndItems.addEventListener("click", this.deleteMarkerandItems)
+                    ul.appendChild(li);
+                }
+                    
+                const deletMarkerAndItems = document.createElement("button");
+                deletMarkerAndItems.setAttribute("data-deleteMarker", this.id)
+                deletMarkerAndItems.setAttribute("id", "delete-marker-and-items");
+                deletMarkerAndItems.innerHTML = "Delete Marker and Items"
+                deletMarkerAndItems.addEventListener("click", this.deleteMarkerandItems)
 
-            const closeEditFormWindow = document.createElement("button");
-            closeEditFormWindow.setAttribute("data-closewindow", this.id)
-            closeEditFormWindow.setAttribute("id", "close-items-window");
-            closeEditFormWindow.innerHTML = "Close this Window"
-            closeEditFormWindow.addEventListener("click", this.closeFormWindow)
+                const closeEditFormWindow = document.createElement("button");
+                closeEditFormWindow.setAttribute("data-closewindow", this.id)
+                closeEditFormWindow.setAttribute("id", "close-items-window");
+                closeEditFormWindow.innerHTML = "Close this Window"
+                closeEditFormWindow.addEventListener("click", this.closeFormWindow)
 
-        
-        
-            const updateItems = document.createElement("button");
-            updateItems.setAttribute("data-address", this.id)
-            updateItems.setAttribute("id", "update-items");
-            updateItems.setAttribute("value", "submit")
-            updateItems.innerHTML = "Update Items"
-            updateItems.addEventListener("click", this.updateItemsOnAddress)
+            
+            
+                const updateItems = document.createElement("button");
+                updateItems.setAttribute("data-address", this.id)
+                updateItems.setAttribute("id", "update-items");
+                updateItems.setAttribute("value", "submit")
+                updateItems.innerHTML = "Update Items"
+                updateItems.addEventListener("click", this.updateItemsOnAddress)
 
-            editItemsForm.appendChild(h4)
-            editItemsForm.appendChild(ul);
-            editItemsForm.appendChild(updateItems);
-            editItemsForm.appendChild(closeEditFormWindow)
-            editItemsForm.appendChild(deletMarkerAndItems);
-            editItemsDiv.appendChild(editItemsForm);
-        }
+                editItemsForm.appendChild(h4)
+                editItemsForm.appendChild(ul);
+                editItemsForm.appendChild(updateItems);
+                editItemsForm.appendChild(closeEditFormWindow)
+                editItemsForm.appendChild(deletMarkerAndItems);
+                editItemsDiv.appendChild(editItemsForm);
+            }
+            else {
+                alert("You must close the window to the right of the map before you an open a new one.")
+            }
     } 
 
     closeFormWindow() {
