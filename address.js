@@ -159,7 +159,7 @@ class Address {
                 editItemsDiv.appendChild(editItemsForm);
             }
             else {
-                alert("You must close the window to the right of the map before you an open a new one.")
+                alert("You must close the window to the right of the map before you can open a new one.")
             }
     } 
 
