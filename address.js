@@ -164,6 +164,7 @@ class Address {
         document.getElementById("edit-items-form").remove();
         editItemsDiv.style.display ="none";
         addressDiv.style.display="inline-block";
+        document.querySelector(".not-displayed").className = "not-displayed"
     }
     
     deleteItem(e) {
