@@ -228,6 +228,7 @@ const submitSignup = (e) => {
 } 
 
 const loadAddressDiv = () => {
+    addressDiv.style.display="block";
     const p = document.createElement("p");
     const button = document.createElement("button");
     
@@ -237,7 +238,6 @@ const loadAddressDiv = () => {
 
     addressDiv.appendChild(p);
     addressDiv.appendChild(button);
-    // addressDiv.style.display="block";
     
     button.addEventListener("click", function () {
         if (!localStorage.jwt_token == ""){
