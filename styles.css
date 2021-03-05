@@ -227,6 +227,10 @@ li {
     list-style-type: none;
 }
 
+footer {
+    bottom: 0%;
+}
+
 @media (max-width: 800px){
     .left-and-right-sections {
         flex-direction: column;
