@@ -66,9 +66,9 @@ main {
     align-items: center;
 }
 
-.right-section {
+/* .right-section {
     margin-left: 100px;
-}
+} */
 
 div#addressButton {
     /* float: right; */
