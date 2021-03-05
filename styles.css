@@ -211,7 +211,7 @@ li {
     list-style-type: none;
 }
 
-/* @media (max-width: 800px){
-    .main-header {display: block;
+@media (max-width: 800px){
+    .left-and-right-sections {flex-direction: column;
     }
-} */
+}
