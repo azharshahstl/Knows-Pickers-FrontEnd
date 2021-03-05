@@ -228,7 +228,7 @@ const submitSignup = (e) => {
 } 
 
 const loadAddressDiv = () => {
-    addressDiv.style.display="block";
+    addressDiv.style.display="flex";
     const p = document.createElement("p");
     const button = document.createElement("button");
     
