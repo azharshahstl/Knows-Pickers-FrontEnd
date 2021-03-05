@@ -125,7 +125,7 @@ main {
 }
 
 #address-paragraph {
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
 
 #address-items-form, #edit-items-form {
