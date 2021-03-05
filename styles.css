@@ -215,6 +215,9 @@ li {
     .left-and-right-sections {
         flex-direction: column;
     }
+    #create-address {
+        display: block;
+    }
 }
 @media (max-width: 800px){
     .right-section {
