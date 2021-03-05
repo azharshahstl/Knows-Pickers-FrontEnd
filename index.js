@@ -229,6 +229,7 @@ const submitSignup = (e) => {
 
 const loadAddressDiv = () => {
     const p = document.createElement("p");
+    p.setAttribute("id", "address-paragragh");
     const button = document.createElement("button");
     
     p.innerHTML = "Click the following button if you would like to create the address which will be used to mark the location of the items you are donating.";
