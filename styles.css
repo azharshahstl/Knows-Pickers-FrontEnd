@@ -124,6 +124,10 @@ main {
     align-items: center;
 }
 
+#address-paragraph {
+    padding-left: 2rem;
+}
+
 #address-items-form, #edit-items-form {
     display: flex;
     flex-direction: column;
