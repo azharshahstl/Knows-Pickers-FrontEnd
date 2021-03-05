@@ -274,6 +274,7 @@ cancelButton.addEventListener("click", function (e) {
     e.preventDefault(); 
     createAddressForm.style.display="none";
     addressDiv.style.display="block";
+    alphaItemsDiv.style.display="none";
 })
 
 addAddressButton.addEventListener("click", function(e) {
