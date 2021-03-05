@@ -237,7 +237,7 @@ const loadAddressDiv = () => {
 
     addressDiv.appendChild(p);
     addressDiv.appendChild(button);
-    addressDiv.style.display="block";
+    // addressDiv.style.display="block";
     
     button.addEventListener("click", function () {
         if (!localStorage.jwt_token == ""){
