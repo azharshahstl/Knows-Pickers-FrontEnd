@@ -228,14 +228,14 @@ const submitSignup = (e) => {
 } 
 
 const loadAddressDiv = () => {
-    const h4 = document.createElement("h4");
+    const p = document.createElement("p");
     const button = document.createElement("button");
     
-    h4.innerHTML = "Click the following button if you would like to create the address which will be used to mark the location of the items you are donating.";
+    p.innerHTML = "Click the following button if you would like to create the address which will be used to mark the location of the items you are donating.";
     button.setAttribute("id", "create-address")
     button.innerHTML = "Create Address";
 
-    addressDiv.appendChild(h4);
+    addressDiv.appendChild(p);
     addressDiv.appendChild(button);
     
     button.addEventListener("click", function () {
