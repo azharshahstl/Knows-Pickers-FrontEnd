@@ -218,6 +218,7 @@ li {
 }
 @media (max-width: 800px){
     .right-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     }
