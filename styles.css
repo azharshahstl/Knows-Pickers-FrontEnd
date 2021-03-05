@@ -214,4 +214,5 @@ li {
 @media (max-width: 800px){
     .left-and-right-sections {flex-direction: column;
     }
+    .right-section {align-items: center;}
 }
