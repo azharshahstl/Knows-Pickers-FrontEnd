@@ -70,13 +70,19 @@ main {
     margin-left: 100px;
 } */
 
-div#addressButton {
-    /* float: right; */
+/* div#addressButton {
+    float: right;
     width: 75%;
     font: inherit;
-    /* position: absolute; */
-    /* margin: 5px; */
+    position: absolute;
+    margin: 5px;
     margin-left: 30px;
+} */
+
+#addressButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #create-address-form {
     border: 3px solid #73AD21;
