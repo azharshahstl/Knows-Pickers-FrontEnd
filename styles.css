@@ -111,6 +111,10 @@ div#addressButton {
     right: 10%;
     margin-top: 10px;
 }
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
 
 #address-items-form, #edit-items-form {
     display: flex;
