@@ -104,14 +104,12 @@ const getSignupForm = () => {
         form.appendChild(password);
         form.appendChild(signupButton);
         signupFormDiv.appendChild(form);
-        // form.reset();
 }
 
 const loadSignupForm = () => {
     if (!document.querySelector("#signup-form") && !document.querySelector("#login-form")) {
         getSignupForm();
     } else if (document.querySelector("#login-form")) {
-        // document.getElementById("login-form").reset();
         document.getElementById("login-form").remove();
         getSignupForm();
     } else {
@@ -153,7 +151,6 @@ const loadLoginForm = () => {
     if (!document.querySelector("#signup-form") && !document.querySelector("#login-form")) {
         getLoginForm();
     } else if (document.querySelector("#signup-form")){
-        // document.getElementById("signup-form").reset();
         document.getElementById("signup-form").remove();
         getLoginForm();
     } else {
@@ -185,7 +182,6 @@ const submitLogin = (e) => {
             login.remove();
             signup.remove();
             logout.style.display="inline";
-            // login.addEventListener("click", loadLoginForm);
             alert ("You are now logged in.")
                 if (document.getElementById("signup-form")){
                     document.getElementById("signup-form").reset();
