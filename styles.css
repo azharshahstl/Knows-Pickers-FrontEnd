@@ -199,4 +199,7 @@ li {
     #create-address-form{
          margin-top: 1rem;
     }
+    .rules-container p {
+    margin-left: 5px;
+    }
 }
