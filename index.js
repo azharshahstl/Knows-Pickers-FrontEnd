@@ -184,6 +184,7 @@ const submitLogin = (e) => {
             login.remove();
             signup.remove();
             logout.style.display="inline";
+            backdrop.classList.remove("open");
             alert ("You are now logged in.")
                 if (document.getElementById("signup-form")){
                     document.getElementById("signup-form").reset();
