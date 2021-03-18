@@ -19,7 +19,7 @@ const login = document.getElementById('login');
 const logout = document.getElementById('logout');
 const signupFormDiv = document.getElementById("signupform");
 const loginFormDiv = document.getElementById("loginform");
-const backdrop = document.querySelector("backdrop");
+const backdrop = document.querySelector(".backdrop");
 
 document.head.appendChild(script);
 
