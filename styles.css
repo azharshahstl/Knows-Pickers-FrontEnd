@@ -200,6 +200,9 @@ li {
          margin-top: 1rem;
     }
     .rules-container p {
-    margin-left: 5px;
+    margin-left: 10px;
+    }
+    .rule-2 {
+    margin-bottom: 5px;
     }
 }
