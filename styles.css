@@ -136,13 +136,13 @@ main {
     margin-left: 30px;
 }
 
-#signupform { 
+/* #signupform { 
     position: absolute;
     right: 3%;
     top: 3%;
-}
+} */
 
-#loginform { 
+#loginform #signupform { 
     position: absolute;
     right: 3%;
     top: 3%;
@@ -206,7 +206,7 @@ li {
         height: 100vh;
         background: rgba(0,0,0,0.9);
     }
-    #loginform { 
+    #loginform #signupform { 
         position: absolute;
         top: 200px;
         z-index: 110;
