@@ -82,6 +82,7 @@ const getSignupForm = () => {
     signupFormDiv.style.display="inline-block";
         const form = document.createElement("form")
         form.setAttribute("id", "signup-form");
+        backdrop.classList.add("open");
         form.setAttribute('method',"POST");
         form.setAttribute('action',"#");
 
@@ -221,6 +222,7 @@ const submitSignup = (e) => {
         logout.style.display="inline"
         signup.addEventListener("click", loadSignupForm)
         const newUser = new User(json);
+        backdrop.classList.remove("open");
         alert ('You are signed up and logged in.')
         }
     })
