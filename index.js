@@ -122,7 +122,7 @@ const getLoginForm = () => {
     loginFormDiv.style.display="inline-block";
         const form = document.createElement("form");
         form.setAttribute("id", "login-form");
-        form.classList("mobile-login");
+        form.classList.add("mobile-login");
         form.setAttribute('method',"POST");
         form.setAttribute('action',"#");
         
