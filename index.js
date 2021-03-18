@@ -19,6 +19,7 @@ const login = document.getElementById('login');
 const logout = document.getElementById('logout');
 const signupFormDiv = document.getElementById("signupform");
 const loginFormDiv = document.getElementById("loginform");
+const backdrop = document.getElementById("backdrop");
 
 document.head.appendChild(script);
 
@@ -119,9 +120,10 @@ const loadSignupForm = () => {
 signup.addEventListener("click", loadSignupForm)
 
 const getLoginForm = () => {
-    loginFormDiv.style.display="inline-block";
+        loginFormDiv.style.display="inline-block";
         const form = document.createElement("form");
         form.setAttribute("id", "login-form");
+        backdrop.classList.add("open");
         form.classList.add("mobile-login");
         form.setAttribute('method',"POST");
         form.setAttribute('action',"#");

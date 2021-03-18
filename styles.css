@@ -198,14 +198,14 @@ li {
     margin-bottom: 5px;
     }
     #loginform { 
-        position: fixed;
+        position: relative;
         right: 50%;
         top: 25%;
         z-index: 110;
     }
-    .backdrop {
+    .open {
         position: fixed;
-        display: none;
+        display: block;
         top: 0;
         left: 0;
         z-index: 100;
