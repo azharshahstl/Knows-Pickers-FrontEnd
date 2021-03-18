@@ -36,13 +36,6 @@ main {
     width: 100%;
 }
 
-/* .title {
-    text-align: center;
-    list-style-position: inside;
-    background-color: rgb(51, 171, 192);
-    padding-bottom: 5px;
-} */
-
 .rules-container {
     display: flex;
     flex-direction: column;
@@ -68,19 +61,6 @@ main {
     width: 100%;
 }
 
-/* .right-section {
-    margin-left: 100px;
-} */
-
-/* div#addressButton {
-    float: right;
-    width: 75%;
-    font: inherit;
-    position: absolute;
-    margin: 5px;
-    margin-left: 30px;
-} */
-
 #addressButton {
     display: flex;
     flex-direction: column;
@@ -92,13 +72,10 @@ main {
     display: none;
     padding: 4px;
     width: 165px;
-    /* position: absolute; */
-    /* top: 33%; */
     right: 20px;
 }
 
 #map {
-    /* display: inline-block; */
     height: 600px; 
     width: 50%;
     margin-left: 10px; 
@@ -116,7 +93,6 @@ main {
     background-color: antiquewhite;
     font: inherit;
     cursor: pointer;
-    /* position: fixed; */
     right: 10%;
     margin-top: 10px;
 }
@@ -139,40 +115,9 @@ main {
     width: 200px;
 }
 
-/* #items-form, #edit-items {
-    border: 3px solid #73AD21;
-    padding: 4px;
-    width: 200px; 
-    position: absolute;
-    top: 33%;
-    right: 20px;
-    height: 50%
-} */
-
 #add-items-button, #update-items {
-    /* position: absolute; */
-    /* float: right; */
     width: 100%; 
-    /* bottom: 0%;
-    right:0% */
-
 }
-
-/* #add-another-button, #delete-marker-and-items {
-    position: absolute; 
-    float: right; 
-    width: 28%; 
-    bottom: 0%;
-    left: 0%
-} */
-
-/* #cancel-items-button, #close-items-window{
-    position: absolute;
-    float: right;
-    width: 28%; 
-    bottom: 0%;
-    left: 35%;
-} */
 
 #delete-item {
     right: 0%;
@@ -184,7 +129,6 @@ main {
     padding: 4px;
     width: 18.75rem;
     height: 12.5rem;
-    /* position: absolute; */
     top: 40%;
     right: 20px;
     overflow: scroll;
