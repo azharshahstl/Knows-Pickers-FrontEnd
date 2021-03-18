@@ -208,7 +208,7 @@ li {
     }
     #loginform { 
         position: relative;
-        right: 500px;
+        margin: auto;
         top: 250px;
         z-index: 110;
     }
