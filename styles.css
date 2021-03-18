@@ -197,12 +197,6 @@ li {
     .rule-2 {
     margin-bottom: 5px;
     }
-    #loginform { 
-        position: relative;
-        right: 50%;
-        top: 25%;
-        z-index: 110;
-    }
     .open {
         position: fixed;
         display: block;
@@ -212,5 +206,11 @@ li {
         width: 100vw;
         height: 100vh;
         background: rgba(0,0,0,0.5);
+    }
+    #loginform { 
+        position: relative;
+        right: 50%;
+        top: 25%;
+        z-index: 110;
     }
 }
